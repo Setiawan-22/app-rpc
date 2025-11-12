@@ -32,8 +32,9 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->brandName('WMP System')
             ->plugins([
-            //FilamentShieldPlugin::make() // <-- Tambahkan di sini
+            FilamentShieldPlugin::make() // <-- Tambahkan di sini
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
